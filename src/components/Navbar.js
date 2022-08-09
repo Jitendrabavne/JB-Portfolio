@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 // import About from './About'
 // import Dashboard from './Dashboard'
 import '../App.css'
@@ -11,18 +11,18 @@ function Navbar() {
             <nav className='nav'>
                 <ul>
                     <li >
-                        <Link to="/"><img src="favicon1.ico" alt="Trulli" />
+                        <NavLink activeClassName="ractive" to="/"><img src="favicon1.ico" alt="Trulli" />
 
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/">Home</Link>
+                        <NavLink activeClassName="ractive" to="/">Home</NavLink>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <NavLink activeClassName="active" to="/about">About</NavLink>
                     </li>
                     <li>
-                        <Link to="/dashboard">Dashboard</Link>
+                        <NavLink activeClassName="active" to="/dashboard">Dashboard</NavLink>
                     </li>
                 </ul>
             </nav>

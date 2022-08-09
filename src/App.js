@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './components/Navbar';
 import About from './components/About';
+
 import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Erore from './components/Erore';
 import Home from './components/Home';
+
 function App(){
   // eslint-disable-next-line
   return (
@@ -12,6 +14,7 @@ function App(){
     <>
       <Router>
         <Navbar />
+        {/* <hr/> */}
         <Switch>
           <Route exact path="/">
             <Home />

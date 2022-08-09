@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import Footer from './Footer'
 import Header from './Header'
 import Section from './Section'
 function Home() {
@@ -7,17 +8,14 @@ function Home() {
   return (
     <>
       <Header />
-      <br/>
-      <hr/>
-      <Section/>
-      
-      <footer>
+      <br />
+      <hr />
+      <Section />
 
-      </footer>
-
-    </>
-  )
+      <Footer/> 
+      </>
+      )
 
 }
 
-export default Home
+      export default Home
