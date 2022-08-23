@@ -1,17 +1,25 @@
-import React from 'react'
-import '../App.css'
-
-const Header = () => {
+import React   from 'react'  
+import '../App.css'  
+import img1 from '../img/f1.png'
+ import { Link } from 'react-router-dom' 
+const Header = (props) => {
+    
   return (
-      <header className='home-heading'>
+        <>
+          
+      <header   className='home-heading'>
           {/* <h1>Portfolio</h1>  */}
 
-          <img className='img-edit' src='favicon.ico' height={200} width={200} />
+          <img title="Jitendra Bavne" className='img-edit'  alt='jb' src={img1} height={200} width={200} />
           <br />
+          <br /> 
+          
           <br />
-          <hr />
-          <br />
-          <p className='para-edit'>Creative <b>PORTFOLIO</b></p>
+          <p className='para-edit'>
+           <p className='text1'>
+            Creative
+          </p>  <b className='text2'> PORTFOLIO</b>
+            </p>
           <br />
           <h1>JB-React Developer</h1>
           <h1>(UX/UI)</h1>
@@ -24,10 +32,10 @@ const Header = () => {
               including versions of Lorem
               Ipsum...
               <br />
-              <button className='btn-read'>Read More 	&#8594; </button>
+              <Link to='/about'> <button title='Read More from About Page' className='btn-read'>Read More 	&#8594; </button></Link> 
           </p>
       </header>
-
+      </>
   )
 }
 

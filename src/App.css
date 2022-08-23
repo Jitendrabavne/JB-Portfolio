@@ -1,50 +1,48 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0%;
-    padding: 0%;
-    background-color: black;
-    color: white;
-}
+    margin: 0%; 
+    padding: 0%;   
+   color: white;
+   background-color: black;
+} 
 
-.nav {
-    background-color: black;
+.nav { 
+    display: flex;
     padding: 10px;
+    background-color: black;
     font-size: large;
-    text-align: center;
+    color: white;
+    text-align: center;  
 }
-
-.nav ul {
+.nav ul { 
     text-align: center;
+    font-size: 24px;
     align-items: center;
+    color: white;
     list-style: none;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-
+    display: flex; 
 }
 
 .nav ul li {
     text-decoration: none;
+    color: white;
     margin-left: 23px;
 }
 
-.li1 {
-    background-color: black;
-
-}
+ 
 
 .nav ul li a {
     color: white;
     text-decoration: none;
     /* font-weight: bolder; */
-}
-.active {  
+ }  
+
+.active {
     text-decoration: underline;
     border-bottom: 3px solid white;
-}
- 
-
-.home-heading {
+}   
+ .home-heading {
     margin-top: 40px;
     padding: auto;
     text-align: center;
@@ -61,53 +59,56 @@
     align-items: center;
     text-align: center;
 }
-
-.para-edit {
-    font-size: 49px;
-
-    border-radius: 20px;
-    width: 30pc;
+.para-edit { 
     align-items: center;
+    justify-content: center;
+    padding: 5px;
     text-align: center;
-    margin: auto;
+    font-size: 50px;
+    display: flex;
 }
+.text1{
+    margin:2px;
+}
+.text2{
+    margin:2px;
+}
+
 .para-details {
-  border-radius: 20px;
-   
-    width: 60pc;
+    border-radius: 20px;
+    display: flex;
+    padding: 3pc;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: 30px;
 }
-.btn-read{
+.btn-read {
     font-weight: bolder;
-        margin: 8px;
-        border-radius: 34px;
-        padding: 6px;
-        cursor: pointer;
-        font-size: 17px;
-        border: 2px solid white;
+    margin: 8px;
+    border-radius: 34px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 2px solid white;
 }
-.btn-read:hover{
+.btn-read:hover {
     background-color: white;
     color: black;
     transition: all 0.5s;
 }
-.item{
+.item {
     display: flex;
-        /* border: 2px solid white; */
-        text-align: center;
-        margin: auto;
-        height: 50vw;
-        padding: auto;
-        align-items: center;
+    flex-direction: row;
+    /* border: 2px solid white; */
+    text-align: center; 
+    align-items: center;
 }
-.item-1{
-/* border: 2px solid white; */
+.item-1 {
+    /* border: 2px solid white; */
     padding: 30px;
     margin: 21px;
 }
-
 #footer {
     font-family: 'Istok Web', sans-serif;
     background-color: black;
@@ -117,14 +118,12 @@
 h1 {
     text-align: center;
 }
-
 .container {
     min-height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
 .myForm {
     display: flex;
     flex-direction: column;
@@ -136,7 +135,6 @@ h1 {
     justify-content: center;
     background-color: #290808;
 }
-
 .myInput {
     outline: none;
     display: block;
@@ -146,7 +144,6 @@ h1 {
     border-radius: 10px;
     margin: 14px 0px;
 }
-
 .btn {
     border: 2px solid #271a1a;
     margin: 8px 2px;
@@ -169,9 +166,8 @@ h1 {
     padding: 30px;
     align-items: center;
     /* justify-content: center; */
-    border: 3px solid lightgreen;
+    /* border: 3px solid lightgreen; */
 }
-
 .spn {
     text-align: center;
     align-items: center;
@@ -179,12 +175,10 @@ h1 {
     justify-content: center;
     font-weight: bolder;
 }
-
 .spn:hover {
     transition: 3s;
     color: lightgreen;
 }
-
 .footImg {
     width: 49px;
     margin: 43px 7px;
@@ -203,14 +197,50 @@ h1 {
     display: flex;
     border-radius: 14px;
 }
-
 .footImg2 {
     width: 8pc;
     margin: 6px 32pc;
+    border: 2px solid white;
     /* float: left; */
     /* flex-direction: column; */
     /* padding: 10px; */
     /* display: flex; */
     border-radius: 14px;
     cursor: pointer;
+}
+
+@media only screen and (max-width:1140px){
+    .nav{
+         
+        justify-content: center;
+        align-items: center;
+    }
+        .nav ul { 
+            font-size: 20px; 
+        }
+    .li{
+        margin: 0px;
+        align-items: center;
+         
+    }
+    .para-edit{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .item{
+        flex-direction: column;
+    }
+        .text1 {
+            margin: 0px;
+        }
+    
+        .text2 {
+            margin: 0px;
+        }
+ 
+
+.nav ul li a{
+    margin: 10px;
+}
 }
